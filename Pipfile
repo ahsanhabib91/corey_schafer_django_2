@@ -11,6 +11,8 @@ pylint = "*"
 django = "*"
 psycopg2 = "*"
 psycopg2-binary = "*"
+django-crispy-forms = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
