@@ -7,6 +7,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
+    # CASCADE -> if the User deleted, also delete the Post. But if the Post deleted, do not delete the User
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
